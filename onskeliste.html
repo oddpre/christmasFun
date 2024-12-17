@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +17,16 @@
             </li>
         </ul>
     </header>
-    
-    <section class="underhoodHeader">
-        <h1>Wishlist</h1>
-        <p>Add, and send your wishlist to Santa here!</p>
-    </section>
-
+    <br> <!--This br-tag fixed it, but I want to know why. Remove br-tag to see what I mean-->
     <main class="mainClass">
+
+        <section class="underhoodHeader">
+            <h1>Wishlist</h1>
+            <p>Add, and send your wishlist to Santa here!</p>
+        </section>
+        
+
+        <!-- Since Santa needs to know everything, all of the fields are needed-->
         <form class="wishlist-form">
             <label for="name">Your name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your name..." required>
@@ -31,23 +34,27 @@
             <label for="gift">What do ya wish for from Santa?</label>
             <input type="text" id="gift" name="gift" placeholder="What do ya wish for?" required>
 
-            <!--Optional, because variety of form entries-->
-            <label for="quantity">How many do you need?</label>
-            <input type="number" id="quantity" name="quantity" min="1" placeholder="Amount" required>
-            <label for="priority">Priority:</label>
-            <select id="priority" name="priority">
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High af</option>
+            
+            <!--Optional, because variety of form entries. -->
+            <label for="quantity">How many do you want from Santa?</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" placeholder="Amount" required> <!--There's no way you'll ask for more than 10 of something from santa, you think he rich?-->
+            
+            <!--Could be radio buttons instead-->
+            <label for="goodorbad">Please tell Santa if you have been good or bad:</label>
+            <select id="goodorbad" name="priority">
+                <option value="good">Good</option>
+                <option value="bad">Bad</option>
+                <option value="noidea">I don't know</option>
             </select>
 
-            <!--Comment-->
-            <label for="comments">Comment (optioanl):</label>
+
+
+            <!--Comment for specifics not required-->
+            <label for="comments">Specifics commentt?</label>
             <textarea id="comments" name="comments" rows="4" placeholder="Is there something the elves and santa should know?"></textarea>
 
             <button type="submit">Submit yo list to santa</button>
         </form>
     </main>
-    <script src="/javascript/santaScriptedInLeagueOfLegends.js"></script>
 </body>
 </html>

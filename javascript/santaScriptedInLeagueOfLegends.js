@@ -1,9 +1,17 @@
-//Hamburger view on mobile.
+document.addEventListener("DOMContentLoaded", function () {
+    const goodOrBadChosen = document.getElementById("goodorbad");
+    const alertOrNo = document.getElementById("alertOrNo");
 
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.navLinks');
+    alertOrNo.addEventListener("click", function (event) {
+        // Prevent form submission
+        event.preventDefault();
 
-//active on mobile
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+        if (goodOrBadChosen.value === "bad") {
+            alert("You are bad. You get a chunk of coal regardless. Santa will make sure of that!");
+        } else if (goodOrBadChosen.value === "noidea") {
+            alert("You certainly will be investigated by Santa Claus");
+        } else {
+            alert("Great. Keep it up, and you should look forward to opening your presents this year!");
+        }
+    });
 });

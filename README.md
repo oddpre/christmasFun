@@ -19,7 +19,9 @@ Changes I did after presentation:
 
 
 
-// Future fixes (Will try to commit these changes before the deadline)
-* I need the logo to be in the middle, there is no questioning it.
-	* Use the translate X function again? I hate this solution. 
-* Fix the navigation bar.
+// Future fixes (Will try to commit these changes before the deadline of 23:30)
+* I want the logo to be in the middle
+* Fix the navigation bar. (fixed)
+
+
+I simply hadn't worked good enough on this assignment, and I noticed from everyone elses presentation. I will stop doing the bare-minimum and put in more effort for next year, that's my goal at least!
