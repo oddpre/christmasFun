@@ -1,0 +1,401 @@
+
+/* underhoodHeader font */
+@font-face {
+    font-family: 'Oleo Script';
+    src:local('Oleo Script'), url(/Oleo_Script/OleoScript-Bold.ttf);
+    font-style:normal;
+    font-weight:300;
+}
+
+body, html {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: orangered;
+    background-color:orange;
+}
+
+body {
+    min-height:100vh;
+}
+
+/* Navigation Bar */
+ul {
+    z-index:1000;
+    position:fixed;
+    margin:0;
+    overflow:hidden;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height:60px;
+    background-color: #d32f2f; 
+}
+
+li {
+    /* float: left; */
+    margin:0 10px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #a31515; 
+}
+
+
+
+/* Logo in Navigation bar */
+
+.logo {
+    /* flex: 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); Adjust position to exactly center */
+    position: relative;
+    left: 0;
+    transform: none;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/* Keep the aspect ratio of the logo */
+.logo img {
+    /* height: 55px; 
+    width: auto;  */
+    height: 40px;
+    max-width: 100px;
+    object-fit: contain;
+    justify-content: center;
+}
+
+
+.active {
+    background-color: #4caf50;
+}
+
+
+/* End of Navigation bar */
+
+/* Parallax in index.html */
+
+.santaMailImage1, .santaMailImage2, .santaMailImage3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.santaMailImage1 {
+    background-image: url('../img/parallaxImg/540pNordpol.jpg');
+    min-height: 1200px;
+}
+
+.santaMailImage2 {
+    background-image: url('../img/parallaxImg/240pSantaLetter.webp');
+    height: 800px;
+}
+
+.santaMailImage3 {
+    background-image: url('../img/parallaxImg/450pSantaSleighRide.webp');
+    height:800px;
+}
+
+.santaMailText {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.santaMailText .santaBorder {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.santaMailText .santaBorder.trans {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.santaSection {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.santaSection-light {
+    background-color: #fff7e6;
+    color: #666;
+}
+
+.santaSection-dark {
+    background-color: #1b263b;
+    color: #ddd;
+}
+
+.wishlistButton {
+    background-color: #4caf50; 
+    color: red;
+    padding: 14px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+
+}
+
+.wishListButton:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+/* End of parallax */
+
+/* underhoodHeader */
+
+.underhoodHeader {
+    font-family: 'Oleo Script', sans-serif;
+}
+
+.underhoodHeader h1
+{
+    margin-top: 300px;
+    font-size:2.8rem; 
+    color: green; 
+    text-align: center;
+}
+
+.underhoodHeader p
+{
+    font-size:1.4rem; 
+    color:greenyellow; 
+    text-align: center;
+}
+
+/* Employee List */
+.mainClass{
+    background-color:orange;
+}
+
+.ceoCover{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:15px 20px;
+}
+
+.ceoCard
+{
+    background-color: white;
+    border: 3px solid #d32f2f;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    margin-top:100px;
+    border-radius:25px;
+}
+
+.ceoCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+/* She was bigger than Santa, and that is not strictly forbidden! */
+#gneis {
+    width:800px;
+    height:auto;
+}
+
+.employee-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 20px;
+    border-radius:15px;
+}
+
+.employee-card {
+    background-color: white;
+    border: 3px solid #d32f2f;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    width: 25%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top:100px;
+}
+
+.employee-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-color: green;
+}
+
+.employee-card img {
+    height: 300px;
+    width:auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.employee-card h2 {
+    margin: 10px 0;
+    color: #4caf50;
+}
+
+.employee-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+
+/* Wishlist */
+.wishlist-form {
+    background-color: green; 
+    border-radius: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    max-width: 750px;
+    margin: 120px auto;
+    text-align: left;
+    
+}
+
+.wishlist-form label {
+    display: block;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.wishlist-form input, .wishlist-form select, .wishlist-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    font-size: 1rem;
+    background-color: white;
+}
+
+/* Input Fields - Focus State */
+.wishlist-form input[type="text"]:focus, .wishlist-form input[type="number"]:focus, .wishlist-form select:focus, .wishlist-form textarea:focus {
+    outline: none;
+    border-color: #d32f2f; /* Red border on focus */
+    box-shadow: 0 0 5px rgba(211, 47, 47, 0.6);
+}
+
+/* Button Styling */
+.wishlist-form button {
+    background-color: #4caf50; /* Green button */
+    color: white;
+    padding: 14px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+.wishlist-form button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+
+
+/* Responsive Design, needs to be more universal and include more elements.*/
+
+@media (max-width: 1125px) {
+    .employee-card {
+        width: 33%;
+    }
+}
+
+
+@media (max-width: 968px) {
+    .santaMailText {
+        font-size: 18px;
+        letter-spacing: 4px;
+    }
+    .employee-card {
+        width: 90%;
+    }
+    .logo img {
+        justify-content: right;
+    }
+}
+
+@media (max-width: 768px) {
+    ul {
+        justify-content: flex-start; 
+    }
+
+    .logo {
+        margin: 0 auto; 
+        margin-bottom: 10px; 
+    }
+
+    .logo img {
+        max-width: 80px; 
+    }
+
+    li a {
+        font-size: 10px; 
+    }
+
+    .santaMailText {
+        font-size: 18px; 
+        letter-spacing: 2px; 
+        top: 45%; 
+    }
+
+    .santaMailText .santaBorder {
+        padding: 10px; 
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .santaMailText {
+        font-size: 16px; 
+        letter-spacing: 1px; 
+        top: 40%; 
+    }
+
+    .santaMailText .santaBorder {
+        padding: 8px; 
+        border-radius: 8px; 
+    }
+}
+
