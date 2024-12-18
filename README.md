@@ -12,7 +12,7 @@ Changes I did after presentation:
 * Fixed the obvious employees image size that posed to be a problem, as seen in the presentation.
 * Made the sites completely verified in html, no errors - Big shit brig error in CSS, however, it is verified as per W3-standards.
 * Adjusted the navigation bar to never overwrite the logo, as it did during the presentation.
-	* Currently, it is bad in the other two pages, due to the underhoodHeader class.
+	* Currently, it is bad in the other two pages, due to the underhoodHeader class. (FIXED)
 
 
 
